@@ -20,7 +20,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
     BrowserModule,
     HttpModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyA4y9znGOIhqwC3d_do5PBiRsqB6iI0Xmg'
+      apiKey: ''
     }),
     AgmJsMarkerClustererModule,
     FormsModule,
