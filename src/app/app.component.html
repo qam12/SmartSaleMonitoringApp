@@ -15,13 +15,13 @@
           
             <agm-marker-cluster imagePath="https://googlemaps.github.io/js-marker-clusterer/images/m">
 
-            <agm-marker 
-                *ngFor="let m of markers; let i = index"
-                (markerClick)="clickedMarker(m.label, i)"
-                [latitude]="m.lat"
-                [longitude]="m.lng"
-                [label]="m.label"
-              >
+              <agm-marker 
+              *ngFor="let m of markers; let i = index"
+              (markerClick)="clickedMarker(m.label, i)"
+              [latitude]="m.lat"
+              [longitude]="m.lng"
+              [label]="m.label"
+            >
                 
               <agm-info-window>
                 <strong>Testing Click</strong>
