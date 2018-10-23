@@ -12,7 +12,7 @@ export class ApiService {
 
   constructor(private http: Http ) {}
 
- getPosts(): Observable<MyNewInterface[]> {
+  getPosts(): Observable<MyNewInterface[]> {
     return this.http.get(this.postsURL)
     .map((response: Response) => {
        return <MyNewInterface[]>response.json().tblData;
